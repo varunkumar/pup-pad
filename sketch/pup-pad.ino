@@ -35,7 +35,6 @@ void loop() {
           Keyboard.releaseAll();
           delay(100);
           Keyboard.println("Adhiyan Varunkumar 1A");
-          delay(100);
           break;
         case MUTE_AUDIO:
           Keyboard.press(KEY_LEFT_GUI);
@@ -73,9 +72,8 @@ void loop() {
           delay(100);
           Keyboard.releaseAll();
           break;
-        default:
-          delay(100);
       }
+      delay(100);
     }
     // save the current button state for comparison next time:
     previousButtonStates[i] = buttonState;
